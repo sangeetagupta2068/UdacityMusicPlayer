@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.sangeetagupta1998.musicplayer.PlayerActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:fontFamily="cursive"
+            android:text=" Current Song "
+            android:textSize="45sp" />
+
+
+        <Button
+            android:id="@+id/buttonPlay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:text="play" />
+
+        <Button
+            android:id="@+id/buttonNext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/buttonPlay"
+            android:text="next" />
+
+        <Button
+            android:id="@+id/buttonPrevious"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:layout_toLeftOf="@id/buttonPlay"
+            android:text="previous" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="45dp"
+            android:src="@drawable/index" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonPlay"
+            android:layout_marginTop="10dp" />
+
+        <Button
+            android:id="@+id/buttonBuy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/seekBar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp"
+            android:layout_marginTop="10dp"
+            android:text="buy" />
+
+    </RelativeLayout>
+</ScrollView>
