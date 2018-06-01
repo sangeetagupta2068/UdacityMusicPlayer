@@ -8,7 +8,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <TextView
             android:id="@+id/textView"
@@ -19,6 +19,17 @@
             android:fontFamily="cursive"
             android:text=" Current Song "
             android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="25dp"
+            android:text="This screen would allow the user to play the song that s/he has selected from the song list. Also, the user can go to the main menu by clicking on the 'menu' button."
+            android:textAlignment="center"
+            android:textSize="22sp" />
 
 
         <Button
@@ -54,7 +65,7 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/textView"
+            android:layout_below="@id/textView3"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="45dp"
             android:src="@drawable/index" />
@@ -72,9 +83,18 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/seekBar"
             android:layout_centerHorizontal="true"
-            android:layout_marginBottom="44dp"
+            android:layout_marginBottom="42dp"
             android:layout_marginTop="10dp"
             android:text="buy" />
+
+        <Button
+            android:id="@+id/backToMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonBuy"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="44dp"
+            android:text="Menu" />
 
     </RelativeLayout>
 </ScrollView>

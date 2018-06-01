@@ -19,6 +19,16 @@
             android:text="Song List"
             android:textSize="45sp" />
 
+        <TextView
+            android:id="@+id/textView3"
+            android:padding="4dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:text="This screen would allow the user to select the song that s/he wants to play from the song list. Also, the user can go to the main menu by clicking on the 'menu' button." />
+
         <Button
             android:id="@+id/song1"
             android:layout_width="match_parent"
@@ -47,10 +57,18 @@
             android:id="@+id/song4"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="44dp"
             android:layout_marginTop="12dp"
             android:padding="8dp"
             android:text="Song 4" />
+
+        <Button
+            android:id="@+id/backToMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="42dp"
+            android:layout_marginBottom="44dp"
+            android:padding="8dp"
+            android:text="Menu" />
 
 
     </LinearLayout>

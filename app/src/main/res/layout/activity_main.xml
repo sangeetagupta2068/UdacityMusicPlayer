@@ -10,6 +10,26 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="12dp"
+            android:fontFamily="cursive"
+            android:text="Main Menu"
+            android:textSize="45sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:padding="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textView"
+            android:layout_marginTop="25dp"
+            android:text="This is the home screen/main menu of the music player application. The user can choose to play a song, view the list of albums,artists or songs from the menu."
+            android:textAlignment="center"
+            android:textSize="22sp" />
+
         <Button
             android:id="@+id/song"
             android:layout_width="match_parent"
@@ -41,6 +61,7 @@
             android:layout_marginTop="12dp"
             android:padding="8dp"
             android:text="Album" />
+
 
         <ImageView
             android:layout_width="wrap_content"

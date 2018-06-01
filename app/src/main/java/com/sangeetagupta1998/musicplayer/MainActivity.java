@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,8 +34,10 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Toast.makeText(getApplicationContext(), "Takes to Music Player", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, PlayerActivity.class);
                 startActivity(intent);
+
             }
         });
 
@@ -42,6 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                Toast.makeText(getApplicationContext(), "Takes to Artist List", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, ArtistActivity.class);
                 startActivity(intent);
             }
@@ -50,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
         song.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(getApplicationContext(), "Takes to Song List", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, SongActivity.class);
                 startActivity(intent);
             }
@@ -59,7 +63,7 @@ public class MainActivity extends AppCompatActivity {
         album.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Toast.makeText(getApplicationContext(), "Takes to Album List", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(MainActivity.this, AlbumActivity.class);
                 startActivity(intent);
             }

@@ -3,37 +3,40 @@
     package="com.sangeetagupta1998.musicplayer">
 
     <application
-
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:label="MainMenuActivity">
             <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN"
+                        />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SongActivity"
-            android:label="Song" />
+            android:label="SongActivity" />
         <activity
             android:name=".AlbumActivity"
-            android:label="Album" />
+            android:label="AlbumActivity" />
         <activity
             android:name=".ArtistActivity"
-            android:label="Artist" />
+            android:label="ArtistActivity" />
         <activity
             android:name=".PlayerActivity"
-            android:label="Player" />
+            android:label="PlayerActivity" />
 
         <meta-data
             android:name="com.google.android.gms.wallet.api.enabled"
             android:value="true" />
 
+        <activity android:name=".PaymentActivity"
+                  android:label="PaymentActivity"></activity>
     </application>
 
 </manifest>

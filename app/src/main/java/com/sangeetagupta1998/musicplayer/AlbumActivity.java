@@ -17,12 +17,13 @@ public class AlbumActivity extends AppCompatActivity {
         setClickListener();
     }
 
-    Button album1, album2;
+    Button album1, album2,menu;
 
     public void initialize() {
 
         album1 = findViewById(R.id.album1);
         album2 = findViewById(R.id.album2);
+        menu = findViewById(R.id.backToMenu);
     }
 
     public void setClickListener() {
@@ -45,6 +46,16 @@ public class AlbumActivity extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(), "Takes to songs from Album2", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(AlbumActivity.this, SongActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        menu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(), "Takes to Main Menu", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(AlbumActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
