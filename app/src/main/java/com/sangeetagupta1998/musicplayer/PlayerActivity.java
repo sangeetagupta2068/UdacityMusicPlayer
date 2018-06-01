@@ -11,7 +11,6 @@ import android.widget.Toast;
 public class PlayerActivity extends AppCompatActivity {
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,7 +75,7 @@ public class PlayerActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(PlayerActivity.this,PaymentActivity.class);
+                Intent intent = new Intent(PlayerActivity.this, PaymentActivity.class);
                 startActivity(intent);
                 Toast.makeText(getApplicationContext(), "Takes to Payment Gateway", Toast.LENGTH_SHORT).show();
 
@@ -95,8 +94,6 @@ public class PlayerActivity extends AppCompatActivity {
 
 
     }
-
-
 
 
 }

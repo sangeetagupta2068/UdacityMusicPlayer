@@ -17,7 +17,7 @@ public class ArtistActivity extends AppCompatActivity {
         setClickListener();
     }
 
-    Button artist1, artist2,menu;
+    Button artist1, artist2, menu;
 
     public void initialize() {
 
@@ -55,7 +55,7 @@ public class ArtistActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 Toast.makeText(getApplicationContext(), "Takes to Main Menu", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(ArtistActivity.this,MainActivity.class);
+                Intent intent = new Intent(ArtistActivity.this, MainActivity.class);
                 startActivity(intent);
 
 

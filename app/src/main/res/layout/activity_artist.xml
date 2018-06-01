@@ -21,13 +21,13 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:padding="4dp"
-            android:layout_marginTop="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:padding="4dp"
+            android:text="This screen would allow the user to select an artist from the artist list.This would take the user to the list of songs sung by that artist. Also, the user can go to the main menu by clicking on the 'menu' button."
             android:textAlignment="center"
-            android:textSize="22sp"
-            android:text="This screen would allow the user to select an artist from the artist list.This would take the user to the list of songs sung by that artist. Also, the user can go to the main menu by clicking on the 'menu' button." />
+            android:textSize="22sp" />
 
         <Button
             android:id="@+id/artist1"
@@ -49,8 +49,8 @@
             android:id="@+id/backToMenu"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="42dp"
             android:layout_marginBottom="44dp"
+            android:layout_marginTop="42dp"
             android:padding="8dp"
             android:text="Menu" />
 

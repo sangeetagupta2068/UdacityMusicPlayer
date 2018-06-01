@@ -23,7 +23,7 @@ import java.util.Arrays;
 
 public class PaymentActivity extends AppCompatActivity {
 
-    Button buy,menu;
+    Button buy, menu;
     private PaymentsClient mPaymentsClient;
 
     @Override
@@ -34,7 +34,7 @@ public class PaymentActivity extends AppCompatActivity {
         setClickListener();
     }
 
-    public void initialize(){
+    public void initialize() {
 
         buy = findViewById(R.id.buy);
         menu = findViewById(R.id.backToMenu);
@@ -60,9 +60,10 @@ public class PaymentActivity extends AppCompatActivity {
 
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {;
+            public void onClick(View v) {
+                ;
                 Toast.makeText(getApplicationContext(), "Takes to Main Menu", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(PaymentActivity.this,MainActivity.class);
+                Intent intent = new Intent(PaymentActivity.this, MainActivity.class);
                 startActivity(intent);
 
 

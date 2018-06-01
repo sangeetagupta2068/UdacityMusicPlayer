@@ -16,21 +16,20 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="24dp"
             android:layout_marginTop="35dp"
-            android:text="Payment Gateway"
             android:fontFamily="cursive"
+            android:text="Payment Gateway"
             android:textAlignment="center"
-            android:textSize="45sp"
-            />
+            android:textSize="45sp" />
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_marginTop="25dp"
-            android:padding="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:padding="4dp"
+            android:text="This screen would allow the user to buy a song when 'proceed to buy' button is clicked.Also,the user can go to the main menu by clicking on the 'menu' button."
             android:textAlignment="center"
-            android:textSize="22sp"
-            android:text="This screen would allow the user to buy a song when 'proceed to buy' button is clicked.Also,the user can go to the main menu by clicking on the 'menu' button." />
+            android:textSize="22sp" />
 
         <Button
             android:id="@+id/buy"
@@ -49,7 +48,6 @@
 
 
     </LinearLayout>
-
 
 
 </ScrollView>

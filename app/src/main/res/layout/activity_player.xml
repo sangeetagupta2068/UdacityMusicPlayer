@@ -22,11 +22,11 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:padding="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView"
             android:layout_marginTop="25dp"
+            android:padding="4dp"
             android:text="This screen would allow the user to play the song that s/he has selected from the song list. Also, the user can go to the main menu by clicking on the 'menu' button."
             android:textAlignment="center"
             android:textSize="22sp" />

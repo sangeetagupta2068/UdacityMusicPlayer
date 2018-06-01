@@ -21,11 +21,11 @@
 
         <TextView
             android:id="@+id/textView3"
-            android:padding="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/textView"
             android:layout_marginTop="25dp"
+            android:padding="4dp"
             android:text="This is the home screen/main menu of the music player application. The user can choose to play a song, view the list of albums,artists or songs from the menu."
             android:textAlignment="center"
             android:textSize="22sp" />

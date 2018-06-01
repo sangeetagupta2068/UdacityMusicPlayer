@@ -17,7 +17,7 @@ public class AlbumActivity extends AppCompatActivity {
         setClickListener();
     }
 
-    Button album1, album2,menu;
+    Button album1, album2, menu;
 
     public void initialize() {
 
@@ -53,6 +53,7 @@ public class AlbumActivity extends AppCompatActivity {
         menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 Toast.makeText(getApplicationContext(), "Takes to Main Menu", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(AlbumActivity.this, MainActivity.class);
